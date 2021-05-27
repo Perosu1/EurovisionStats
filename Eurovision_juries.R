@@ -31,16 +31,6 @@ results.sub %>%
   mutate(perfection_percent = (points_awarded_to_winner/144)*100) -> point_results
 View(point_results)
 
-#update for 2021
-# juries %>%
-#   mutate(n = replace(n, from_country == "Ukraine", 2)) %>%
-#   mutate(n = replace(n, from_country == "Slovenia", 7)) %>%
-#   mutate(n = replace(n, from_country == "Georgia", 3)) %>%
-#   add_row(from_country = "Croatia", n = 1) %>%
-#   mutate(percentage = (n/12)*100) -> updated_results
-# View(updated_results)
-
-
 #all correct votes up to 2021- for debugging and verifying
 results.sub %>%
   filter(jury_or_televoting == "J") %>%
