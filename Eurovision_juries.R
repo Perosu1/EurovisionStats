@@ -1,7 +1,7 @@
 library(tidyverse)
 options(digits=2)
 
-#importing - source of database is datagraver, results only go up to 2019 (2020 was canceled)
+#importing - source: datagraver
 results <- read_csv("eurovision_song_contest_1975_2021.csv", 
                                               col_types = cols(semi_final = col_character(), 
                                               winner = col_character()))
